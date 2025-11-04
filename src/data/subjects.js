@@ -51,7 +51,7 @@ export const subjects = [
     id: 9,
     name: "آزمایشگاه علوم تجربی (1)",
     code: "110217",
-    grades: [19, 18]
+    grades: [19,16]
   },
   {
     id: 10,
@@ -69,13 +69,13 @@ export const subjects = [
     id: 13,
     name: "تفکر و سواد رسانه ای",
     code: "110225",
-    grades: [19, 20, 19]
+    grades: [17, 19]
   },
   {
     id: 14,
     name: "تعلیمات ادیان الهی و اخلاق (1) ـ ویژه اقلیت های دینی",
     code: "110228",
-    grades: [20, 19, 20]
+    grades: [17, 16, 20]
   },
   {
     id: 15,
