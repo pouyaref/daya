@@ -14,8 +14,11 @@ export const useApp = () => {
 export const AppProvider = ({ children }) => {
   const [userProfile, setUserProfile] = useState({
     name: 'پویا عارف زاده خادملو',
-    studentId: '980123456',
-    class: 'دهم ریاضی ۱'
+    studentId: '1400111177971',
+    class: 'دهم ریاضی ۱',
+    fatherName: 'جواد',
+    nationalCode: '0452431000',
+    school: 'دبیرستان دوره دوم راهیان صادق'
   });
   const [subjects, setSubjects] = useState(initialSubjects);
 

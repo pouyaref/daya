@@ -20,13 +20,8 @@ const GradesSection = () => {
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-2xl font-bold text-gray-800">کارنامه تحصیلی</h2>
         <div className="text-center">
-          <div className="bg-blue-100 text-blue-800 px-4 py-2 rounded-lg">
-            <span className="font-medium">معدل کل: </span>
-            <span className="font-bold text-lg">{overallAverage}</span>
-          </div>
-          <div className={`mt-1 text-sm font-medium ${status.color}`}>
-            {status.text}
-          </div>
+          
+      
         </div>
       </div>
 

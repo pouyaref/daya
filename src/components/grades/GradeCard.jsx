@@ -7,10 +7,10 @@ const GradeCard = ({ subject }) => {
   const average = calculateSubjectAverage(subject.grades);
 
   const getGradeColor = (grade) => {
-    if (grade >= 17) return 'bg-green-100 text-green-800';
-    if (grade >= 14) return 'bg-blue-100 text-blue-800';
-    if (grade >= 10) return 'bg-yellow-100 text-yellow-800';
-    return 'bg-red-100 text-red-800';
+    if (grade >= 17) return 'bg-green-100 text-green-800 border border-green-200';
+    if (grade >= 14) return 'bg-blue-100 text-blue-800 border border-blue-200';
+    if (grade >= 10) return 'bg-yellow-100 text-yellow-800 border border-yellow-200';
+    return 'bg-red-100 text-red-800 border border-red-200';
   };
 
   const getAverageColor = (avg) => {
@@ -21,18 +21,17 @@ const GradeCard = ({ subject }) => {
   };
 
   return (
-    <div className="border-2 border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+    <div className="border-2 border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow grade-card fade-in">
       <div className="flex justify-between items-start mb-3">
         <div className="flex-1">
           <h3 className="font-bold text-gray-800 text-lg">{subject.name}</h3>
-          <p className="text-sm text-gray-600 mt-1">کد کتاب: {subject.code}</p>
-        </div>
-        <div className="text-center ml-4">
-          <div className={`text-lg font-bold ${getAverageColor(average)}`}>
-            {average}
+          <div className="flex items-center mt-1">
+            <span className="text-sm text-gray-600">کد کتاب: {subject.code}</span>
+            <span className="mx-2 text-gray-400">•</span>
+            <span className="text-sm text-blue-600 font-medium">👨‍🏫 {subject.teacher}</span>
           </div>
-          <div className="text-xs text-gray-500">معدل</div>
         </div>
+       
       </div>
 
       <div className="grid grid-cols-5 gap-2">
